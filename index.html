@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多功能工具集 - 首页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css" id="theme-link">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部导航栏 -->
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-toolbox"></i>
+                <span>多功能工具集</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="tools/base64.html">Base64加解密</a></li>
+                <li><a href="tools/password.html">密码生成器</a></li>
+                <li><a href="tools/regex.html">正则工具</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-btn">
+                    <i class="fas fa-moon"></i>
+                    <span>深色模式</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- 首页内容 -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1>一站式多功能工具集</h1>
+                <p>Base64加解密、随机密码生成、正则表达式生成器 - 全部集成在一个平台</p>
+                <div class="hero-cta">
+                    <a href="tools/base64.html" class="btn primary">Base64工具</a>
+                    <a href="tools/password.html" class="btn">密码生成器</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80" alt="工具集">
+            </div>
+        </header>
+
+        <!-- 工具介绍部分 -->
+        <section class="tools-intro">
+            <h2>我们的工具</h2>
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Base64加解密</h3>
+                    <p>快速将文本转换为Base64编码或解码Base64字符串，支持批量处理</p>
+                    <a href="tools/base64.html" class="btn">进入</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>随机密码生成器</h3>
+                    <p>生成高安全性随机密码，可自定义长度、字符类型和复杂度</p>
+                    <a href="tools/password.html" class="btn">进入</a>
+                </div>
+                
+                <div class="tool-card">
+                    <div class="tool-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>正则表达式工具</h3>
+                    <p>创建、测试和优化正则表达式，支持多种匹配模式</p>
+                    <a href="tools/regex.html" class="btn">进入</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 页脚 -->
+        <footer>
+        <div class="footer-info">
+        <a href="https://www.netlify.com">
+  <img src="https://www.netlify.com/assets/badges/netlify-badge-color-bg.svg" alt="Deploys by Netlify" />
+</a></div>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-toolbox"></i>
+                    <span>多功能工具集</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">首页</a>
+                    <a href="tools/base64.html">Base64工具</a>
+                    <a href="tools/password.html">密码生成器</a>
+                    <a href="tools/regex.html">正则工具</a>
+                </div>
+                <div class="footer-info">
+                    <p>© 2025 多功能工具集 - 保留所有权利</p>
+                    <p>高效 · 安全 · 易用</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/common.js"></script>
+</body>
+</html>

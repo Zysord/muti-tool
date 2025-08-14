@@ -1,0 +1,74 @@
+/* css/dark-theme.css - 深色主题样式 */
+:root {
+    --text: #e0e0e0;
+    --text-light: #a0a0a0;
+    --bg: #121212;
+    --card-bg: #1e1e1e;
+    --border: #333;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.result-box {
+    background: #252525;
+    border-color: #333;
+}
+
+.theme-toggle button {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: var(--text);
+}
+
+.theme-toggle button:hover {
+    background-color: #3a3a3a;
+}
+
+.nav-links a {
+    color: var(--text);
+}
+
+.footer-links a {
+    color: var(--text-light);
+}
+
+.footer-links a:hover {
+    color: var(--accent);
+}
+
+/* 深色主题特定元素样式 */
+.slider-container input[type="range"] {
+    background: #333;
+}
+
+.slider-container input[type="range"]::-webkit-slider-thumb {
+    background: var(--primary);
+}
+
+.strength-meter {
+    background: #333;
+}
+
+.highlight {
+    background-color: rgba(67, 97, 238, 0.3);
+    color: #fff;
+}
+
+.notification {
+    background: #2d2d2d;
+    border-left-color: var(--success);
+}
+
+/* 深色主题的卡片悬停效果 */
+.tool-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* 深色主题按钮效果 */
+.btn:hover {
+    box-shadow: 0 6px 15px rgba(67, 97, 238, 0.2);
+}

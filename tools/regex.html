@@ -1,0 +1,93 @@
+<!-- regex.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>正则表达式工具</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dark-theme.css" id="theme-link">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-toolbox"></i>
+                <span>多功能工具集</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="base64.html">Base64加解密</a></li>
+                <li><a href="password.html">密码生成器</a></li>
+                <li><a href="regex.html" class="active">正则工具</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-btn">
+                    <i class="fas fa-moon"></i>
+                    <span>深色模式</span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="tool-page">
+            <div class="tool-header">
+                <h1><i class="fas fa-code"></i> 正则表达式工具</h1>
+                <p>创建、测试和优化正则表达式，支持多种匹配模式</p>
+            </div>
+            
+            <div class="tool-container">
+                <div class="form-group">
+                    <label for="regex-pattern">正则表达式：</label>
+                    <input type="text" id="regex-pattern" placeholder="输入正则表达式...">
+                </div>
+                
+                <div class="form-group">
+                    <label>选项：</label>
+                    <div class="regex-flags">
+                        <div class="flag-option">
+                            <input type="checkbox" id="global-flag" checked>
+                            <label for="global-flag">全局匹配 (g)</label>
+                        </div>
+                        <div class="flag-option">
+                            <input type="checkbox" id="ignore-case">
+                            <label for="ignore-case">忽略大小写 (i)</label>
+                        </div>
+                        <div class="flag-option">
+                            <input type="checkbox" id="multiline">
+                            <label for="multiline">多行模式 (m)</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tool-actions">
+                    <button id="test-regex" class="btn primary">测试正则表达式</button>
+                </div>
+                
+                <div class="test-area">
+                    <div class="form-group">
+                        <label for="test-text">测试文本：</label>
+                        <textarea id="test-text" placeholder="输入测试文本..."></textarea>
+                    </div>
+                    
+                    <div class="result-container">
+                        <div class="result-header">
+                            <h3>匹配结果：</h3>
+                        </div>
+                        <div id="regex-result" class="result-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <p>© 2025 多功能工具集 - 正则表达式工具</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../js/common.js"></script>
+    <script src="../js/regex.js"></script>
+</body>
+</html>
